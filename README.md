@@ -16,8 +16,7 @@ Steps to deploy the project locally:
           `sudo -u postgres createuser -sPE user_name`
           `sudo -u postgres createdb db_name`
   Get your bot token:
-          Talk to the BotFather and get and set your bot token
-          Open telegram, and search for the Botfather. Type the command `/newbot` to create a bot and follow the instructions to get a token.
+          Open telegram, and search for the Botfather. Type the command `/newbot` to create a newbot and follow the instructions to get the BOT TOKEN.
 
 4. Migrate the tables to the database: `python manage.py migrate`
 5. Create Superuser: `python manage.py createsuperuser`
@@ -34,8 +33,8 @@ Steps to deploy the project locally:
    Response to following the link should be like:
    {"ok":true,"result":true,"description":"Webhook was set"}
 
-Congrats, it’s alive!
-If everything is right, you should now be able to talk to the bot.
+   Congrats, it’s alive!
+   If everything is right, you should now be able to talk to the bot.
 
 
 <hr>
