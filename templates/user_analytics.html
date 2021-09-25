@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="table table-bordered dt-responsive nowrap audience-lst-table text-center">
+  <thead class="thead-light">
+      <tr>
+          <th>Name</th>
+          <th>User ID</th>
+          <th>Button Clicked</th>
+          <th class="text-center">No of Calls</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    {% for u in users %}
+    <tr>
+      <td>{{ u.first_name }}</td>
+      <td>{{ u.user_id }}</td>
+      <td>{{ u.joke }}</td>
+      <td>{{ u.count }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock%}
