@@ -6,7 +6,7 @@ Steps to deploy the project locally:
 
 1. Clone the Repository `https://github.com/GodsonJohn01/telegram-joke-bot.git`. Then `cd telegram-joke-bot`
 
-1. Install and activate virtualenv: `pip install virtualenv`, `source venv/bin/activate`
+1. Install and activate virtualenv: `pip install virtualenv`, `virtualenv venv`, `source venv/bin/activate`
 
 3. Install the requirements using `pip install -r requirements.txt`
 
@@ -20,7 +20,7 @@ Steps to deploy the project locally:
 
 4. Migrate the tables to the database: `python manage.py migrate`
 5. Create Superuser: `python manage.py createsuperuser`
-6. And start the server with `python manage.py runserver`. Go to http://127.0.0.1:8000/ on your browser. Django Admin: http://127.0.0.1:8000/admin
+6. And start the server with `python manage.py runserver`. Go to http://127.0.0.1:8000/joke-bot/users/ on your browser. Django Admin: http://127.0.0.1:8000/admin
 
 7. Take a new tab on your terminal and start it with `ngrok http 8000`. Download ngrok (https://ngrok.com/)
    You will get a ngrok https url. eg: https://c4fd-45-115-91-243.ngrok.io
