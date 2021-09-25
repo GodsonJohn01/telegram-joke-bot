@@ -1,4 +1,4 @@
-# telegram-joke-bot
+# Telegram Joke Bot
 This is a simple telegram joke bot using Django.
 
 
@@ -10,7 +10,8 @@ Steps to deploy the project locally:
 
 3. Install the requirements using `pip install -r requirements.txt`
 
-2. Create environment variable file `.env` based on the `.env.example` file in the project's root directory
+2. Create environment variable file `.env` based on the `.env.example` file in the project's root directory.
+
    We are using Postgresql DB, create user and database:
           `sudo -u postgres createuser -sPE user_name`
           `sudo -u postgres createdb db_name`
@@ -26,8 +27,8 @@ Steps to deploy the project locally:
    You will get a ngrok https url. eg: https://c4fd-45-115-91-243.ngrok.io
    This URL we will be used to set up the WebHook.
 
-8. Set your webhook to connect to the Telegram API
-- `https://api.telegram.org/bot<BOT-TOKEN>/setWebhook?url=<https://c4fd-45-115-91-243.ngrok.io>/`
+8. Set your webhook to connect to the Telegram API.
+  `https://api.telegram.org/bot<BOT-TOKEN>/setWebhook?url=<https://c4fd-45-115-91-243.ngrok.io>/`
    Replace variables in the < > with your credentials.
 
    Response to following the link should be like:
@@ -35,3 +36,11 @@ Steps to deploy the project locally:
 
 Congrats, it’s alive!
 If everything is right, you should now be able to talk to the bot.
+
+
+<hr>
+
+### Notes
+Issue with the Webhook?
+
+Delete the Webhook using: `https://api.telegram.org/bot<YOUR_TOKEN>/setWebhook` and create a new one.
